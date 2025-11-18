@@ -52,9 +52,9 @@ class GradeCalculator:
     
     def get_assignment_input(self):
         """Collect and assignment details from user"""
-        print("\n" + "="*50)
-        print("ENTER THE ASSIGNMENT DETAILS")
-        print("="*50)
+        print("\n" + "*"*50)
+        print("ENTER YOUR ASSIGNMENT DETAILS")
+        print("*"*50)
         
         # Assignment Name
         assignment_name = input("Assignment Name: ").strip()
@@ -130,13 +130,13 @@ class GradeCalculator:
         total_grade, gpa = self.calculate_final_grade()
         pass_status, fa_required, sa_required = self.check_pass_fail()
         
-        print("\n" + "="*60)
+        print("\n" + "^"*60)
         print("GRADE SUMMARY")
-        print("="*60)
+        print("*"*60)
         
         # Assignment details
         print("\nASSIGNMENT DETAILS:")
-        print("-" * 40)
+        print("*" * 40)
         for i, assignment in enumerate(self.assignments, 1):
             weighted_grade = (assignment['grade'] / 100) * assignment['weight']
             print(f"{i}. {assignment['name']} ({assignment['category']})")
@@ -145,13 +145,13 @@ class GradeCalculator:
         
         # Category totals
         print("\nCATEGORY TOTALS:")
-        print("-" * 40)
+        print("*" * 40)
         print(f"Formative (FA): {self.total_formative:.2f}% / {self.fa_weight_total}%")
         print(f"Summative (SA): {self.total_summative:.2f}% / {self.sa_weight_total}%")
         
         # Final results
         print("\nFINAL RESULTS:")
-        print("-" * 40)
+        print("_" * 40)
         print(f"Total Grade: {total_grade:.2f}%")
         print(f"GPA: {gpa:.2f} / 5.0")
         
@@ -197,7 +197,7 @@ def main():
     """Main function to run the grade calculator"""
     print("YOU HAVE MADE IT TO THE GRADE GENERATOR CALCULATOR!")
     print("ALU Year 1 Trimester 2, BSE")
-    print("=" * 50)
+    print("_" * 50)
     
     calculator = GradeCalculator()
     
@@ -227,7 +227,7 @@ def main():
     
     print("\n" + "="*50)
     print("YOU MADE IT PROGRAM HAS BEEN COMPLETED SUCCESSFULLY!!")
-    print("="*50)
+    print("^"*50)
 
 
 if __name__ == "__main__":

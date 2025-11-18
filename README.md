@@ -11,12 +11,12 @@ This project is made of two parts:
 - `grades.csv` : this is an output file created right after running grade generator
 - `organizer.log` :this is a log file created right after running organizer
 
-## Part 1: Grade Generator (Python)
+## Part 1: Grade Generator (in python)
 
 ### Features
 - validation of grade range (0-100)
 - checking category(FA/SA)
-- checking weight (positive numbers)
+- checking that weight is positive 
 - calculating weighted grades
 - total from each category (Formative/Summative)
 - calculating final grade and GPA
