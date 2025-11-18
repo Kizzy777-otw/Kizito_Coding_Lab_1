@@ -38,7 +38,7 @@ archive_csv_files() {
     fi
     
     # Processing each CSV file
-    echo "We are currently processing the CSV files, please hold on..."
+    echo "We are currently processing the CSV files, please hold on...."
     
     for file in $csv_files; do
         # Skips if it's the archive directory itself
