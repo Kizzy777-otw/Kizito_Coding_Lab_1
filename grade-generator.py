@@ -226,7 +226,7 @@ def main():
     calculator.export_to_csv()
     
     print("\n" + "="*50)
-    print("YOU MADE IT, PROGRAM HAS BEEN COMPLETED SUCCESSFULLY!!")
+    print("YOU MADE IT,PROGRAM HAS BEEN COMPLETED SUCCESSFULLY!!")
     print("^"*50)
 
 
