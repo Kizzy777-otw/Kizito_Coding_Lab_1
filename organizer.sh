@@ -57,7 +57,7 @@ archive_csv_files() {
         log_action "Archiving file: $filename -> $new_filename"
         log_action "File content of $filename:"
         cat "$file" >> organizer.log
-        echo "--- THIS IS THE END OF THE FILE: $filename ---" >> organizer.log
+        echo "<<< THIS IS THE END OF THE FILE: $filename >>>" >> organizer.log
         
         # Move and rename the file
         mv "$file" "$archive_dir/$new_filename"
