@@ -21,7 +21,7 @@ class GradeCalculator:
         self.sa_weight_total = 0
         
     def validate_grade(self, grade):
-        """check if grade is between 0 and 100"""
+        """Check if grade is between 0 and 100"""
         try:
             grade_float = float(grade)
             if 0 <= grade_float <= 100:
